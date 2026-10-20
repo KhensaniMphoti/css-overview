@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Gives search engines a description of this page. -->
+  <meta
+    name="description"
+    content="Test your knowledge of Marvel movies before Avengers: Doomsday."
+  >
+
+  <!-- Open Graph title for social sharing. -->
+  <meta
+    property="og:title"
+    content="Marvel Road to Doomsday Quiz"
+  >
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <title>Marvel Quiz</title>
+
+ 
+
+  <!-- Links this page to the shared CSS file. -->
+  <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+
+  <main>
+
+    <header>
+
+      <h1>Marvel: Road to Doomsday Quiz</h1>
+
+      <!-- Navigation links between our three HTML pages. -->
+      <nav>
+
+        <a href="./index.html">Home</a>
+
+        <a href="./movies.html">Movies</a>
+
+        <a href="./quiz.html">Quiz</a>
+
+      </nav>
+
+    </header>
+
+
+    <section id="quiz" aria-labelledby="quiz-title">
+      <h2 id="quiz-title">How Well Do You Know Marvel?</h2>
+      <p>Test yourself using what you learned from the movies.</p>
+
+      <form action="" method="get">
+        <fieldset>
+          <legend>1. Which movie features Thanos collecting the Infinity Stones?</legend>
+          <label><input type="radio" name="question-one" value="infinity-war" required> Avengers: Infinity War</label>
+          <br>
+          <label><input type="radio" name="question-one" value="no-way-home"> Spider-Man: No Way Home</label>
+          <br>
+          <label><input type="radio" name="question-one" value="fantastic-four"> The Fantastic Four: First Steps</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>2. Which of these movies have you watched?</legend>
+          <label><input type="checkbox" name="watched" value="infinity-war" checked> Avengers: Infinity War</label>
+          <br>
+          <label><input type="checkbox" name="watched" value="endgame"> Avengers: Endgame</label>
+          <br>
+          <label><input type="checkbox" name="watched" value="no-way-home"> Spider-Man: No Way Home</label>
+          <br>
+          <label><input type="checkbox" name="watched" value="deadpool-wolverine"> Deadpool &amp; Wolverine</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>3. Who is your favorite Marvel character?</legend>
+          <label for="favorite-character">Character name</label>
+          <input type="text" id="favorite-character" name="favorite-character"
+                 class="text-box" placeholder="e.g. Spider-Man"
+                 minlength="2" maxlength="40" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>4. Are you ready for Doomsday?</legend>
+          <label for="ready">Choose your answer</label>
+          <select id="ready" name="ready">
+            <option value="yes">Yes!</option>
+            <option value="not-yet">Not yet!</option>
+          </select>
+        </fieldset>
+
+        <button type="submit">Submit Quiz</button>
+        <button type="reset">Reset</button>
+      </form>
+
+    </section>
+
+
+    <section id="next">
+
+      <h2>What Should You Watch Next?</h2>
+
+      <p>
+        If you have not watched all the movies yet,
+        return to the movie guide.
+      </p>
+
+      <a href="./movies.html">
+        Back to the Movie Guide 
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <p>
+      Marvel: Road to Doomsday &copy; 2026<sup>TM</sup>
+    </p>
+    
+
+    <a href="./index.html">
+      Back to Home
+    </a>
+
+  </footer>
+
+</body>
+
+</html>

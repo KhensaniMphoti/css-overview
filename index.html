@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- Tells the browser that this document uses modern HTML5 -->
+
+<html lang="en">
+<!-- The html element is the root of the whole HTML document.
+     lang="en" tells the browser that the page is in English. -->
+
+<head>
+
+  <!-- Sets the character encoding to UTF-8.
+       This allows us to use characters like ©, →, and &. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Provides a short description of the webpage.
+       This can help search engines understand the page. -->
+  <meta
+    name="description"
+    content="A Marvel movie guide covering important movies before Avengers: Doomsday."
+  >
+
+  <!-- Open Graph properties control how the page can appear
+       when it is shared on social media. -->
+  <meta
+    property="og:title"
+    content="Marvel: Road to Doomsday"
+  >
+
+  <!-- Tells social media that this is a website. -->
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <!-- The title appears in the browser tab. -->
+  <title>Marvel: Road to Doomsday</title>
+
+
+  <!-- Links this page to the shared CSS file. -->
+  <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+
+  <!-- main contains the main content of the webpage. -->
+  <main>
+
+    <!-- header contains introductory content and navigation. -->
+    <header id="top">
+
+      <h1>Marvel: Road to Doomsday</h1>
+      <!-- h1 is the most important heading on the page. -->
+
+      <p>
+        Welcome to my <strong>Marvel movie guide</strong>.
+        This website explores some of the movies to watch before
+        <em>Avengers: Doomsday</em>.
+      </p>
+
+      <!-- strong gives text strong importance.
+           em adds emphasis to text. -->
+
+    
+      <!-- nav is a semantic element used to contain
+           the main navigation links of the website. -->
+      <nav>
+
+        <!-- These are relative paths because the pages
+             are inside the same project folder. -->
+        <a href="./index.html">Home</a>
+
+        <a href="./movies.html">Movies</a>
+
+        <a href="./quiz.html">Quiz</a>
+
+      </nav>
+
+    </header>
+
+
+    <!-- section divides the webpage into meaningful areas. -->
+    <section id="introduction">
+
+      <h2>Welcome to the Marvel Universe</h2>
+
+      <p>
+        Marvel has created a huge universe filled with superheroes,
+        different worlds, and the multiverse.
+      </p>
+
+      <p>
+        Here are some movies that can help you understand
+        some of the stories leading toward <strong>Doomsday</strong>.
+      </p>
+
+    </section>
+
+
+    <section id="movies">
+
+      <h2>Movies to Watch</h2>
+
+      <!-- An ordered list creates a numbered list. -->
+      <ol>
+
+        <li>Avengers: Infinity War</li>
+        <li>Avengers: Endgame</li>
+        <li>Doctor Strange in the Multiverse of Madness</li>
+        <li>Spider-Man: No Way Home</li>
+
+        <!-- &amp; is an HTML entity used to display & safely. -->
+        <li>Deadpool &amp; Wolverine</li>
+
+        <li>Thunderbolts</li>
+
+        <li>The Fantastic Four: First Steps</li>
+
+      </ol>
+
+    </section>
+
+
+    <section id="featured">
+
+      <h2>Featured Movie</h2>
+
+      <!-- figure groups an image with its caption. -->
+      <figure>
+
+        <!-- img is a void element, so it doesn't need a closing tag.
+
+             src = where the image is located.
+             alt = describes the image for accessibility. -->
+        <img
+          src="./images/infinity-war.webp"
+          alt="Avengers Infinity War movie poster"
+        >
+
+        <!-- figcaption provides a caption for the image. -->
+        <figcaption>
+
+          <strong>Avengers: Infinity War</strong>
+          is one of the important movies in this journey.
+
+        </figcaption>
+
+      </figure>
+
+    </section>
+
+
+    <!-- div is a generic container.
+         Unlike section, it doesn't have semantic meaning.
+         We can give it a class so CSS can style it. -->
+
+
+    <section id="html-showcase" aria-labelledby="showcase-title">
+      <aside aria-label="Marvel terminology">
+        <h3>Marvel Terms</h3>
+        <p>
+          The MCU is an <abbr title="Marvel Cinematic Universe">MCU</abbr>.
+          The story also explores the multiverse and events leading to
+          <em>Avengers: Doomsday</em>.
+        </p>
+        <p>Project milestone: <time datetime="2026">2026</time>.</p>
+      </aside>
+    </section>
+
+    <div class="navigation-box">
+
+      <p>
+        Ready to explore the movies?
+      </p>
+
+      <!-- This link takes us to another HTML file
+           in the same project. -->
+      <a href="./movies.html">
+        Go to the Movie Guide
+      </a>
+
+      <!-- &rarr; displays a right arrow. -->
+
+    </div>
+
+  </main>
+
+
+  <!-- footer normally contains information at the bottom
+       of the webpage. -->
+  <footer>
+
+    <p>
+      Marvel: Road to Doomsday &copy; &parallel;  2026<sup>TM</sup>
+    </p>
+  
+
+    <!-- This link uses an ID.
+         #top means "go to the element with id='top'". -->
+    <a href="#top">Back to top</a>
+
+  </footer>
+
+</body>
+
+</html>
